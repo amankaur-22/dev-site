@@ -1,0 +1,73 @@
+.greeting {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bitcount Prop Single', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.subtext {
+  margin: 0px;
+}
+
+.hyperlink-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+.email {
+    color: #FF2DD1;
+}
+
+a:link {
+  color: #00f7ff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ea61ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF2DD1;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #C0FF61;
+  text-decoration: underline;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.gradient-background {
+  background: repeating-linear-gradient(30deg, 
+    #000000 0%, 
+    #1a0035 20%, 
+    #000000 40%, 
+    #1a0035 60%, 
+    #000000 80%,
+    #1a0035 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient-animation 15s linear infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
